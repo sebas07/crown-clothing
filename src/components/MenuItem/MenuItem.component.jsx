@@ -21,3 +21,8 @@ const MenuItem = ({ menuTitle, imageUrl, size, history, match, linkUrl }) => {
 }
 
 export default withRouter(MenuItem);
+
+// withRouter receives a component as an argument and transforms it into a new component and returns it
+// with this the new component has access to the Parent's properties without needing us to pass them
+// throughout all the between components. Here we give MenuItem access to the Route properties 
+// of history and match that are in the App component (where react-router-dom was implemented)

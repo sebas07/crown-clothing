@@ -58,3 +58,6 @@ class Directory extends React.Component {
 }
 
 export default Directory;
+
+// ...otherSectionProps = {imageUrl={ imageUrl } menuTitle={ title } size={ size }
+// we are passing all the props of section to MenuItem, so we can reduce it of this way
